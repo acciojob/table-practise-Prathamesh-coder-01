@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details Table</title>
+
+  <style>
+    table {
+      background-color: yellow;         /* Table background color */
+      border: 1px solid black;          /* Table border */
+      border-collapse: collapse;        /* Merge table borders */
+      width: 50%;                       /* Optional: makes it cleaner */
+    }
+
+    th, td, tr {
+      border: 1px solid black;          /* Border for each cell */
+      padding: 8px;                     /* Spacing inside cells */
+      text-align: center;               /* Center align text */
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <table border="1px solid black" style="background-color: yellow;">
-        
-        <caption>Student Details</caption>
+  <table>
+    <caption>Student Details</caption>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>BRANCH</th>
+      </tr>
+    </thead>
 
-        <thead >
-            <td>NAME</td>
-            <td>AGE</td>
-            <td>BRANCH</td>
+    <tbody>
+      <tr>
+        <td>Shaw</td>
+        <td>20</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>Adil</td>
+        <td>21</td>
+        <td>ECE</td>
+      </tr>
+     
+    </tbody>
+  </table>
 
-        </thead>
-        <tbody>
-            <td>Shaw</td>
-            <td>20</td>
-            <td>CSE</td>
-            
-        </tbody>
-        <tbody>
-             <td>Adil</td>
-            <td>21</td>
-            <td>ESE</td>
-        </tbody>
-
-
-
-
-
-    </table>
 </body>
-
 </html>
+
